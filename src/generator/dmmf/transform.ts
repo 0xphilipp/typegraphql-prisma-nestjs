@@ -295,7 +295,7 @@ function transformOutputType(dmmfDocument: DmmfDocument) {
             };
           });
           const argsTypeName =
-            args.length > 0
+            args.length > 0 && !typeName.endsWith("Count")
               ? `${typeName}${pascalCase(field.name)}Args`
               : undefined;
 

@@ -1,11 +1,11 @@
 {
-  "name": "typegraphql-prisma-nestjs",
-  "version": "0.2800.015",
+  "name": "typegraphql-prisma-nestjs-count",
+  "version": "0.2800.017",
   "scripts": {
     "prepare": "husky install",
     "build": "tsc",
     "package:build": "./package.sh",
-    "package:publish": "cd package *&& npm publish",
+    "package:publish": "cd package && npm publish",
     "check:type": "tsc --noEmit --skipLibCheck",
     "check:experiments:postgres": "cd ./experiments/postgres && tsc --noEmit --skipLibCheck",
     "check:experiments:mongodb": "cd ./experiments/mongodb && tsc --noEmit --skipLibCheck",
@@ -16,7 +16,7 @@
     "format": "prettier --ignore-path ./.cli.prettierignore --write ./**/*.{js,json,ts,tsx}"
   },
   "bin": {
-    "typegraphql-prisma-nestjs": "lib/generator.js"
+    "typegraphql-prisma-nestjs-count": "lib/generator.js"
   },
   "peerDependencies": {
     "@prisma/client": "^5.18.0",
@@ -78,15 +78,15 @@
     "node": ">=20.11.1"
   },
   "author": {
-    "name": "Michał Lytek",
-    "url": "https://github.com/MichalLytek"
+    "name": "0xPhilipp",
+    "url": "https://github.com/0xphilipp"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/EndyKaufman/typegraphql-prisma-nestjs.git"
+    "url": "https://github.com/0xphilipp/typegraphql-prisma-nestjs.git"
   },
   "bugs": {
-    "url": "https://github.com/EndyKaufman/typegraphql-prisma-nestjs/issues"
+    "url": "https://github.com/0xphilipp/typegraphql-prisma-nestjs/issues"
   },
   "keywords": [
     "nestjs",
